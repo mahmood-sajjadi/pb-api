@@ -1,3 +1,9 @@
 <div class="container">
-	APP WORKES
-</div>
+		<progressbar ng-repeat="pb in bars track by $index" limit="{{limit}}" value="pb"></progressbar>
+		<select class="barnames"
+			ng-model="selectedpb"
+			ng-options="(idx - 0) as ('#progress ' + (idx - -1)) for (idx, pb) in bars track by idx">
+		</select>
+		<button class="btn" ng-repeat="value in buttons track by $index" ng-click="onClick(selectedpb, value)">{{value}}</button>
+	</div>
+	
