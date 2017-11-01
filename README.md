@@ -1,5 +1,8 @@
 # PB-API
-Progressbar with API call(config file). for checking this repo:
+Angular 1.6 sample project with:
+  - es6 features
+  - webpack + karma + jasmine + protractor + eslint
+Progressbar with API call(config file). for testing this code or extending it:
   - git clone this repo or download it as a zip file and extract it
   - cd to projetct folder
   - use yarn to install dependencies
