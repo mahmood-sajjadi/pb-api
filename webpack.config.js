@@ -19,7 +19,16 @@ const config = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loader: ['ng-annotate-loader', 'babel-loader']
+				use: [{
+					loader: 'ng-annotate-loader'
+				}, {
+					loader: 'eslint-loader',
+					options: {
+						fix: true,
+					}
+				}, {
+					loader: 'babel-loader'
+				}]
 			},
 			{
 				test: /\.(scss)$/,
