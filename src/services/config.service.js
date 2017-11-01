@@ -6,5 +6,6 @@ export default class ConfigService {
   }
 
   get() {
+    return this.$http.get('/bars');
   }
 }
